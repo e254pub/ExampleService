@@ -1,0 +1,28 @@
+{
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tim"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=8.0",
+    "guzzlehttp/guzzle": "^7.0",
+    "ext-json": "*",
+    "psr/log": "^3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "9.5.21"
+  },
+  "autoload": {
+    "psr-4": {
+      "ExampleService\\": "src/",
+      "ExampleService\\Tests\\": "src/tests/",
+      "ExampleService\\Dto\\": "src/Dto/",
+      "ExampleService\\Dto\\Request\\": "src/Dto/Request/"
+    }
+  },
+  "extra": {}
+}
